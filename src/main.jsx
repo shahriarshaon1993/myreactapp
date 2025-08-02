@@ -1,9 +1,12 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import App from "./App.jsx";
+import React from "react";
+import ReactDOM from "react-dom";
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <App />
-  </StrictMode>
+let index = 0;
+const element = (
+  <h1 className="heading" tabIndex={index}>
+    <span className="text">Hello World</span>
+    <img src="ing.jpg" alt="img" />
+  </h1>
 );
+
+ReactDOM.render(element, document.getElementById("root"));
