@@ -1,13 +1,7 @@
-import Form from "./components/Form";
+import Calculator from "./components/Calculator";
 
 function App() {
-    const quantities = [1, 2, 3];
-
-    return (
-        <>
-            <Form />
-        </>
-    );
+    return <Calculator />;
 }
 
 export default App;
